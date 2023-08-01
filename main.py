@@ -16,7 +16,7 @@ entry = Entry(frame1,width = 50)
 ybar = Scrollbar(frame,background = 'grey')
 xbar = Scrollbar(frame)
 
-openai.api_key = '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'
+openai.api_key = ''
 
 def api():
     enter1 = entry.get()
