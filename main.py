@@ -26,8 +26,7 @@ def api():
     ]
     x = openai.ChatCompletion.create(model = "gpt-3.5-turbo",messages = i)
     j = x["choices"][0]["message"]["content"]
-    new_line = '\n'
-    Content = enter.insert(END,f"{new_line}OUTPUT: {j}")
+    Content = enter.insert(END,f"'\n'OUTPUT: {j}")
     return Content
 
 
